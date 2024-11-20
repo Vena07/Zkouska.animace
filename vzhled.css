@@ -1,0 +1,48 @@
+img{
+    width: 500px;
+    margin: 5px;
+    height: 250px;
+    transition: all 0.2s ease;
+    display: flex;
+    object-fit: cover;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obrazky{
+    width: 1000px;
+    height: 500px;
+}
+
+.obrazek1,.obrazek2,.obrazek3,.obrazek4{
+    transition: all 0.2s ease;
+
+}
+
+
+.obrazek1:hover{
+    width: 800px;
+    height: 300px;
+}
+
+.obrazek1:hover ~ .obrazek2 {
+    height: 300px;
+    max-width: 200px;
+}
+
+.obrazek1:hover ~ .obrazek4,
+.obrazek1:hover ~ .obrazek3  {
+    max-height: 100px;
+}
